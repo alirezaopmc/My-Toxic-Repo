@@ -2,7 +2,12 @@
 
 int main()
 {
+
+    /**
+     * Heap - Begin
+     */
     heap myHeap;
+
     myHeap.insert(3);
     myHeap.insert(2);
     myHeap.remove(1);
@@ -17,6 +22,10 @@ int main()
     myHeap.set(2, 1);
 
     std::cout << myHeap.min() << std::endl;
-    
+
     myHeap.log();
+
+    /**
+     * Heap - End
+     */
 }
