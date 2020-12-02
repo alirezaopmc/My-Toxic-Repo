@@ -3,6 +3,9 @@ bool TEST_CASE = true;
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <stack>
+#include <string>
+
 using namespace std;
 
 #define l(i,s,n) for(int i=s; i<n; i++)
@@ -32,5 +35,5 @@ int main()
 
 void solve()
 {
-    cout << (int) 1.2e3;
+    
 }
