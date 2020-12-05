@@ -1,15 +1,21 @@
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 
 int main ()
 {
-    bool flag = true;
+    int cnt[10];
+    memset(cnt, 0, sizeof(cnt));
+    int n;
+    cin >> n;
 
-    for (int i = 0; i < 100 && flag; i++) {
-        for(int j = 0; j < 100 && flag; j++) {
-            cout << i << " " << j << endl;
-            if (i == 31 && j == 2) flag = false;
-        }
+    while(n) {
+        cnt[n % 10]++;
+        n /= 10;
+    }
+
+    for(int i = 0; i < 10; i++) {
+        cout << i << ": " << cnt[i] << endl;
     }
 }
