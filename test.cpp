@@ -5,17 +5,24 @@ using namespace std;
 
 int main ()
 {
-    int cnt[10];
-    memset(cnt, 0, sizeof(cnt));
-    int n;
+    long long n;
     cin >> n;
 
-    while(n) {
-        cnt[n % 10]++;
-        n /= 10;
+    long long two = 1;
+    while(two * 2 <= n) two *= 2;
+
+    long long ans = 0;
+
+    while(two) {
+        if (two <= n) {
+            ans++;
+            n -= two;
+        }
+        two /= 2;
+        ans *= 10;
     }
 
-    for(int i = 0; i < 10; i++) {
-        cout << i << ": " << cnt[i] << endl;
-    }
+    ans /= 10;
+
+    cout << ans;
 }
