@@ -1,0 +1,7 @@
+Ba ezafe kardane yek yal yeki az NULL pointer ha mipare va 2 ta ezafe mishe (+2-1=+1)
+bejoz dafe aval
+
+
+pas
+
+total null = 2 + (+1)(n-1) = n+1

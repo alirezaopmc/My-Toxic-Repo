@@ -1,12 +1,14 @@
 #include "./heap/heap.h"
 
+
+
 int main()
 {
 
     /**
      * Heap - Begin
      */
-    heap myHeap;
+    heap<int> myHeap;
 
     myHeap.insert(3);
     myHeap.insert(2);

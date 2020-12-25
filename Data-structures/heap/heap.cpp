@@ -1,34 +1,32 @@
 #ifndef _heap_
 #define _heap_
 
-#include <iostream>
-#include <vector>
-
 #include "heap.h"
 
-
-heap::heap()
+template <typename T>
+heap<T>::heap()
 {
 }
 
 
-
-heap::~heap()
+template <typename T>
+heap<T>::~heap()
 {
 }
 
-
-int heap::min()
+template <typename T>
+T heap<T>::min()
 {
     return heapArray[0];
 }
 
 
-int heap::extract()
+template <typename T>
+T heap<T>::extract()
 {
     if (heapArray.empty()) return INT32_MAX;
 
-    int root = heapArray[0];
+    T root = heapArray[0];
 
     if (heapArray.size() > 1)
     {
@@ -43,7 +41,8 @@ int heap::extract()
 
 
 
-void heap::heapify(int index)
+template <typename T>
+void heap<T>::heapify(int index)
 {
     int leftChild = left(index);
     int rightChild = right(index);
@@ -68,7 +67,8 @@ void heap::heapify(int index)
 
 
 
-void heap::insert(int value)
+template <typename T>
+void heap<T>::insert(T value)
 {
     heapArray.push_back(value);
     int index = heapArray.size() - 1;
@@ -77,7 +77,8 @@ void heap::insert(int value)
 
 
 
-void heap::remove(int index)
+template <typename T>
+void heap<T>::remove(int index)
 {
     set(index, INT32_MIN);
     extract();
@@ -85,7 +86,8 @@ void heap::remove(int index)
 
 
 
-void heap::set(int index, int value)
+template <typename T>
+void heap<T>::set(int index, T value)
 {
     heapArray[index] = value;
     inverseHeapify(index);
@@ -93,7 +95,8 @@ void heap::set(int index, int value)
 
 
 
-void heap::inverseHeapify(int index)
+template <typename T>
+void heap<T>::inverseHeapify(int index)
 {
     while(index && heapArray[index] < heapArray[parent(index)])
     {
@@ -104,34 +107,46 @@ void heap::inverseHeapify(int index)
 
 
 
-int heap::left(int index)
+template <typename T>
+int heap<T>::left(int index)
 {
     return 2 * index + 1;
 }
 
 
 
-int heap::right(int index)
+template <typename T>
+int heap<T>::right(int index)
 {
     return 2 * index + 2;
 }
 
 
 
-int heap::parent(int index)
+template <typename T>
+int heap<T>::parent(int index)
 {
     return (index-1) / 2;
 }
 
 
 
-void heap::log()
+template <typename T>
+void heap<T>::log()
 {
     for(auto element : heapArray)
     {
         std::cout << element << ' ';
     }
     std::cout << std::endl;
+}
+
+
+
+template <typename T>
+int heap<T>::size()
+{
+    return heapArray.size();
 }
 
 #endif
