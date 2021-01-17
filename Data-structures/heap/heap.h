@@ -1,7 +1,10 @@
-#include <iostream>
-#include <vector>
+#ifndef HEAP_H
+#define HEAP_H
 
-template <class T>
+#include <vector>
+#include <iostream>
+
+template <typename T>
 class heap
 {
 private:
@@ -22,3 +25,5 @@ public:
     int parent(int index);
     void log();
 };
+
+#endif

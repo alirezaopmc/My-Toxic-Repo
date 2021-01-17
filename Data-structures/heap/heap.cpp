@@ -1,7 +1,5 @@
-#ifndef _heap_
-#define _heap_
-
 #include "heap.h"
+#include <iostream>
 
 template <typename T>
 heap<T>::heap()
@@ -34,7 +32,7 @@ T heap<T>::extract()
         heapify(0);
     }
 
-    this->heapArray.pop_back();
+    heapArray.pop_back();
 
     return root;
 }
@@ -148,5 +146,3 @@ int heap<T>::size()
 {
     return heapArray.size();
 }
-
-#endif

@@ -1,4 +1,10 @@
 #include "./heap/heap.h"
+#include <iostream>
+#include <vector>
+#include <set>
+#include <cstring>
+#include <algorithm>
+#include <bitset>
 
 
 
@@ -18,12 +24,12 @@ int main()
     myHeap.insert(5);
     myHeap.insert(45);
 
-    std::cout << myHeap.extract() << std::endl;
-    std::cout << myHeap.min() << std::endl;
+    // std::cout << myHeap.extract() << std::endl;
+    // std::cout << myHeap.min() << std::endl;
 
-    myHeap.set(2, 1);
+    // myHeap.set(2, 1);
 
-    std::cout << myHeap.min() << std::endl;
+    // std::cout << myHeap.min() << std::endl;
 
     myHeap.log();
 
