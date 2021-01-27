@@ -1,0 +1,4 @@
+dqiq natoonestam esbat konam
+
+vali ba mesal zadan motevajeh shodam age ye successor khyli door bashe
+be ezaye chand ta call O(1) darim

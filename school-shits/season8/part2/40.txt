@@ -1,0 +1,4 @@
+fc stands for factorial
+
+P = fc(10**6) / [ fc(10**6 - 2500) * (10**6)**2500 ] ~ 0
+so 1 - P > 95

@@ -22,7 +22,7 @@ T heap<T>::min()
 template <typename T>
 T heap<T>::extract()
 {
-    if (heapArray.empty()) return INT32_MAX;
+    if (heapArray.empty()) return NULL;
 
     T root = heapArray[0];
 

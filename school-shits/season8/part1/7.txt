@@ -1,0 +1,4 @@
+I did this on BNCalculator project
+it's O(N)
+
+https://github.com/SleepingJempa/BNCalculator/blob/master/libs/expression-evaluation/expression-evaluation.cpp

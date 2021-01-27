@@ -1,0 +1,18 @@
+RotateRight(BinaryTreeNode n) {
+    if (n.getLeft() == null) {
+        return;
+    }
+
+    BinaryTreeNode oldLeft = n.getLeft();
+    n.setLeft(oldLeft.getRight());
+
+    if (n.getParent() == null) {
+        root = oldLeft;
+    } else if (n.getParent().getLeft() == n) {
+        n.getParent().setLeft(oldLeft);
+    } else {
+        n.getParent().setRight(oldLeft);
+    }
+    
+    oldLeft.setRight(n);
+}
