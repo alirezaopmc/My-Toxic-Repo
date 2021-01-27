@@ -1,0 +1,15 @@
+ARR.
+If we use array we can easily use binary search method because we have
+    references to all elements. But we must shift them and it takes a long time.
+Insert = BinarySearch + Shifting
+Time Complexity of ARR
+    = O(lgN) + O(N) = O(N)
+
+If we use linked list we can get rid of shifting because we just need to
+    change references to next and prev, but we can not use binary search method.
+Insert = FindFromHead + Assign
+    = O(N) + O(1) = O(N)
+
+And for hash table we can not even sort them in any basic methods. Because hash-
+    -table use its own function to manage the elements and it doesn't depend on comparison.
+NO NO NO !

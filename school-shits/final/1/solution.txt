@@ -1,0 +1,43 @@
+Suppose we have two heaps A and B.
+
+We create a new heap H with Root
+Let Root's value be -inf
+then:
+    Root.Left = A
+    Root.Right = B
+after that:  
+    H.extractMin()
+
+so we extracted -inf from H and the heap is still a heap.
+but how?
+the indices must be organized
+
+Pseudocode:
+    Heap H = new Heap()
+    H[0] = INT_MIN // Minus Infinity
+
+    int MapA = new Array(A.size())
+    int MapB = new Array(B.size())
+
+    MapA[0] = 1
+    MapB[0] = 2
+
+    for(int i = 1; i < A.size(); i++) {
+        if (i % 2 == 1) {
+            MapA[i] = MapA[i/2] + 1;
+        } else {
+            MapA[i] = MapA[i/2] + 2;
+        }
+    }
+
+    for(int i = 1; i < B.size(); i++) {
+        if (i % 2 == 1) {
+            MapB[i] = MapB[i/2] + 1;
+        } else {
+            MapB[i] = MapB[i/2] + 2;
+        }
+    }
+    // No time left ... :(
+
+
+    

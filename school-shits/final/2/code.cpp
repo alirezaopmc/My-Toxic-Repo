@@ -29,5 +29,5 @@ std::stack<T> removeRepeated(std::stack<T>& mainStack, T& var, std::stack<T>& he
     else return removeRepeated(helperStack, var, mainStack); 
 
     // Explanation is attached as a voice file in link below
-    
+    // https://github.com/SleepingJempa/My-Toxic-Repo/tree/master/school-shits/final
 }
