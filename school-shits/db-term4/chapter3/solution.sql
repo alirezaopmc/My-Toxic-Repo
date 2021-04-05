@@ -1,3 +1,7 @@
+-- Alireza Jafartash
+-- 983112029
+-- https://github.com/alirezaopmc/My-Toxic-Repo/blob/master/school-shits/db-term4/chapter3/solution.sql
+
 -- 3.1
 --  a
 SELECT title
@@ -130,7 +134,7 @@ WHERE (
     SELECT COUNT(*), title FROM course
 ) = 1
 
--- 23
+-- 23 [With help of my friend]
 SELECT dept_name
 FROM (
     SELECT dept_name, SUM(salary)
