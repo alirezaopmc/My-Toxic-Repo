@@ -23,4 +23,13 @@ Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
 Top level modules:
 	TestFullAdder
 
+} {} {}} D:/Projects/My-Toxic-Repo/school-shits/logical-design/lab/adder/16_bit_adder.v {1 {vlog -work work -nocovercells D:/Projects/My-Toxic-Repo/school-shits/logical-design/lab/adder/16_bit_adder.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module SixteenBitAdder
+-- Compiling module SixteenBitAdderTest
+
+Top level modules:
+	SixteenBitAdder
+	SixteenBitAdderTest
+
 } {} {}}
