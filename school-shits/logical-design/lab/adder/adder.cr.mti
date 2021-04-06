@@ -1,0 +1,26 @@
+D:/Projects/My-Toxic-Repo/school-shits/logical-design/lab/adder/4_bit_adder.v {1 {vlog -work work -nocovercells D:/Projects/My-Toxic-Repo/school-shits/logical-design/lab/adder/4_bit_adder.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module FourBitAdder
+-- Compiling module FourBitAdderTest
+
+Top level modules:
+	FourBitAdder
+	FourBitAdderTest
+
+} {} {}} D:/Projects/My-Toxic-Repo/school-shits/logical-design/lab/adder/halfadder.v {1 {vlog -work work -nocovercells D:/Projects/My-Toxic-Repo/school-shits/logical-design/lab/adder/halfadder.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module HalfAdder
+-- Compiling module TestHalfAdder
+
+Top level modules:
+	TestHalfAdder
+
+} {} {}} D:/Projects/My-Toxic-Repo/school-shits/logical-design/lab/adder/fulladder.v {1 {vlog -work work -nocovercells D:/Projects/My-Toxic-Repo/school-shits/logical-design/lab/adder/fulladder.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module FullAdder
+-- Compiling module TestFullAdder
+
+Top level modules:
+	TestFullAdder
+
+} {} {}}
