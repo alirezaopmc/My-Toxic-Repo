@@ -1,0 +1,8 @@
+InOrder: (az E root kardam)
+fegdcba
+
+PreOrder:
+efbcgda
+
+PostOrder:
+fgdcabe

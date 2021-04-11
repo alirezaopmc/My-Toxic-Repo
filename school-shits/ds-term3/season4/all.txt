@@ -1,0 +1,138 @@
+1
+Search ( Ref L : List, Element : Type ) : Element {
+    if ( L.data = Element.data ) return Element
+    else if ( L == NULL ) return NULL
+    else return Search ( L^.next )
+}
+
+
+2
+DeleteAll ( Ref L : List, X : Type ) {
+    if ( L.next != NULL && L.next.data == X ) {
+        L^.next = L.next.next
+    } else if ( L == NULL ) {
+        return
+    } else {
+        return DeleteAll ( L.next, X )
+    }
+}
+
+
+3
+Merge ( L1 : List, L2 : List ) {
+    List Result = new List()
+
+    while ( ! L1.empty() && ! L2.empty() ) {
+        Result.push( (L1.data < L2.data) ? L1.data : L2.data).popFirst() )
+    }
+
+    while ( ! L1.empty() ) {
+        Result.push( L1.popFirst() )
+    }
+
+    while ( ! L2.empty() ) {
+        Result.push( L2.popFirst() )
+    }
+}
+
+
+5
+Size (Ref L : List) : Integer {
+    if (L == NULL) return 0
+    else return 1 + Size( L^.next )
+}
+
+
+7
+FIRST: 1 + C(n, 2)
+NEXT: n * ( Sum{k}[1 -> n] (k * C(k, 2)) )
+
+
+9
+a. Bale chon too array ma be har khoone pointer darim
+b. har do halat emkan dare chon mishe list ro peymayesh kard va akhario peyda kard
+faghat too array limit darim!!
+p. har do. mese b mishe peymayesh kard -1 ro ham darim pas moshkeli nis
+
+
+10
+dynamic nis va age bekhaym afzayesh bedim hazineye khyli ziadi dare bara new krdn
+
+
+11
+Reverse( Ref L : List , Ref Next : Node ) {
+    if ( L == NULL ) return
+
+    Node* Temp = L^.next
+    L^.next = Next
+    Reverse(Temp, L)
+}
+
+
+12
+?
+
+
+15
+Split( Ref L : List, Number : Integer ) : List, List {
+    List* L1 = L
+    List* L2 = L
+    while ( Number-- > 0 ) {
+        if ( Number == 0 ) {
+            L2 = L.next
+            L^.next = NULL
+        }
+    }
+
+    return L1, L2
+}
+
+
+16
+Size( Ref A : Array) : Integer {
+    Integer i = 0
+    while( A[i] != NULL ) i++;
+    return i
+}
+
+
+18
+PutInArray(Ref L : List, Ref A : Array) {
+    Integer i = 0
+    Node* traverse = L
+    while( L != NULL ) {
+        A[i] = traverse
+        traverse = traverse.next
+    }
+}
+
+
+20
+Remove ( Ref L : DoublyList, Element : Type ) {
+    Node start = L
+    Node* traverse = L
+
+    do {
+        if (traverse.next.data == Element) {
+            traverse^.next = traverse.next.next
+        }
+    } while (traverse != start)
+}
+
+
+21
+Insert( Ref L : DoublyList, Element : Type, Index : Integer) {
+    // Find Index
+    // Prev.next(pointer) = Element
+    // Next.prev(pointer) = Element
+    // Element.next(pointer) = Index.next
+    // Element.next(pointer).prev(pointer) = Element
+    
+}
+
+Remove ( Ref L : DoublyList, Element : Type, Index) {
+    // Find Index
+    // Prev.next(pointer) = Next
+    // Next.prev(pointer) = Prev
+}
+
