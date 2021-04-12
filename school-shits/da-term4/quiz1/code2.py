@@ -6,7 +6,11 @@ mat = [
 ]
 
 def min_of_matrix(mat, ax, ay, bx, by):
+    mins = []
     n, m = len(mat), len(mat[0])
+
+    if ax >= m <= bx or ay >= n <= by:
+        return mins
 
     def is_min(i, j):
         if i-1 >= 0:
@@ -19,32 +23,34 @@ def min_of_matrix(mat, ax, ay, bx, by):
             if mat[i][j+1] <= mat[i][j]: return False
         return True
 
-    mins = []
+    def add(l):
+        for x in l:
+            mins.append(x)
 
     if ax == bx and ay == by:
-        if is_min(ax, ay):
+        if is_min(ay, ax):
            mins.append((ax, ay))
         return mins
     
     mx = (ax + bx) // 2
     my = (ay + by) // 2
 
-    mins.append(
+    add(
         min_of_matrix(mat, ax, ay, mx, my)
     )
 
-    mins.append(
-        min_of_matrix(mat, ax+1, my+1, mx, by)
+    add(
+        min_of_matrix(mat, ax, my+1, mx, by)
     )
 
-    mins.append(
-        min_of_matrix(mat, mx+1, ay+1, bx, my)
+    add(
+        min_of_matrix(mat, mx+1, ay, bx, my)
     )
 
-    mins.append(
+    add(
         min_of_matrix(mat, mx+1, my+1, bx, by)
     )
 
     return mins
 
-    
+print(min_of_matrix(mat, 0, 0, 3, 3))
