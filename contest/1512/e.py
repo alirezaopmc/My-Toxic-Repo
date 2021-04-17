@@ -12,6 +12,7 @@ for _ in range(int(input())):
 
     mp = {}
 
+
     for i in range(n):
         mp[i+1] = True
 
@@ -28,14 +29,26 @@ for _ in range(int(input())):
                 ind += 1
             i -= 1
 
-    i = 1
-    while i <= n:
-        if i == l:
-            for j in perm:
-                print(j, end=' ')
-        elif mp[i]:
-            print(i, end=' ')
-            i += 1
+        i = 1
+        cnt = 0
+        k = r - l + 1
+        while i <= n:
+            # print('i=', i)
+            if cnt + 1 == l:
+                # print('perm case')
+                for j in perm:
+                    print(j, end=' ')
+                cnt += k
+                continue
+            elif mp[i]:
+                # print('true case')
+                print(i, end=' ')
+                i += 1
+                cnt += 1
+            else:
+                # print('false case')
+                i += 1
+        print()
 
     else:
         print(-1)
