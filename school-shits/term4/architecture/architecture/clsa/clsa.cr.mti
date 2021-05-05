@@ -1,0 +1,17 @@
+D:/Projects/My-Toxic-Repo/school-shits/term4/architecture/architecture/clsa/clsa_3_3_6_4.v {1 {vlog -work work -nocovercells D:/Projects/My-Toxic-Repo/school-shits/term4/architecture/architecture/clsa/clsa_3_3_6_4.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module FullAdder
+-- Compiling module MUX_1bit
+-- Compiling module MUX_3bit
+-- Compiling module MUX_4bit
+-- Compiling module MUX_6bit
+-- Compiling module RippleCarryAdder_3bit
+-- Compiling module RippleCarryAdder_4bit
+-- Compiling module RippleCarryAdder_6bit
+-- Compiling module CarrySelectAdder_16bit_3_3_6_4
+-- Compiling module CarrySelectAdder_16bit_3_3_6_4_TB
+
+Top level modules:
+	CarrySelectAdder_16bit_3_3_6_4_TB
+
+} {} {}}

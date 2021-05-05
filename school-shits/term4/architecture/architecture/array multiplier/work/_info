@@ -1,0 +1,61 @@
+m255
+K3
+13
+cModel Technology
+dD:\Projects\My-Toxic-Repo\school-shits\term4\architecture\laboratory\seven-segment
+vArrayMultiplier_6x6
+I>1SKI;AeW@2Ra:1cdB=D50
+VOm=9lZUfo[nS5lkD[`mmE0
+Z0 dD:\Projects\My-Toxic-Repo\school-shits\term4\architecture\architecture\array multiplier
+Z1 w1620196734
+Z2 8D:/Projects/My-Toxic-Repo/school-shits/term4/architecture/architecture/array multiplier/array_multiplier.v
+Z3 FD:/Projects/My-Toxic-Repo/school-shits/term4/architecture/architecture/array multiplier/array_multiplier.v
+L0 308
+Z4 OV;L;6.3g_p1;37
+r1
+!s85 0
+31
+Z5 o-work work -nocovercells -O0
+n@array@multiplier_6x6
+vArrayMultiplier_6x6_TB
+IQzXUa8Z4SULJ>71e1DYQ?3
+V>^>@Wh0gTJV<P9HI@Oa9c3
+Z6 dD:\Projects\My-Toxic-Repo\school-shits\term4\architecture\architecture\array multiplier
+R1
+R2
+R3
+L0 471
+R4
+r1
+!s85 0
+31
+R5
+n@array@multiplier_6x6_@t@b
+vFullAdder
+IZFFoGAZcIOoHI[QdL7oT:2
+Vg;9>ezg?<CUD]ZShjSl=_1
+R6
+R1
+R2
+R3
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+n@full@adder
+vHalfAdder
+I`[XzG`3NmccV8I`n]TIB>1
+VXzSHCc:j4HDl_CeogaS^d2
+R6
+R1
+R2
+R3
+L0 13
+R4
+r1
+!s85 0
+31
+R5
+n@half@adder

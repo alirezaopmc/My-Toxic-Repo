@@ -3,3 +3,157 @@ K3
 13
 cModel Technology
 dC:\Program Files\altera\81\modelsim_ae\examples
+vCarrySelectAdder_16bit_3_3_6_4
+Ia2F1XRU@Q[>7G;ooFR27m3
+V:ef>ZJ4kW4OH5[T]@F0Pf3
+Z0 dD:\Projects\My-Toxic-Repo\school-shits\term4\architecture\architecture\clsa
+Z1 w1619278149
+Z2 8D:/Projects/My-Toxic-Repo/school-shits/term4/architecture/architecture/clsa/clsa_3_3_6_4.v
+Z3 FD:/Projects/My-Toxic-Repo/school-shits/term4/architecture/architecture/clsa/clsa_3_3_6_4.v
+L0 133
+Z4 OV;L;6.3g_p1;37
+r1
+!s85 0
+31
+Z5 o-work work -nocovercells -O0
+n@carry@select@adder_16bit_3_3_6_4
+vCarrySelectAdder_16bit_3_3_6_4_TB
+IMfXUm763J]h?lAoY6=@n30
+VV6[:Y3nHI4Sz1@95;F:YS3
+Z6 dD:\Projects\My-Toxic-Repo\school-shits\term4\architecture\architecture\clsa
+R1
+R2
+R3
+L0 226
+R4
+r1
+!s85 0
+31
+R5
+n@carry@select@adder_16bit_3_3_6_4_@t@b
+vFullAdder
+IE3TFdM9BOb@3?B0c:2^`k0
+Vg;9>ezg?<CUD]ZShjSl=_1
+R6
+R1
+R2
+R3
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+n@full@adder
+vMUX_1bit
+I0KEEBaQ=LbdKEcA_Xng`Y3
+V7?U9UajQSU<i<X9o<<zz32
+R6
+R1
+R2
+R3
+L0 13
+R4
+r1
+!s85 0
+31
+R5
+n@m@u@x_1bit
+vMUX_3bit
+IUSPgKd4zTJ1i3I2GbU;:?3
+V:iM^2FJ@hN5HbVKAC2kT`1
+R6
+R1
+R2
+R3
+L0 25
+R4
+r1
+!s85 0
+31
+R5
+n@m@u@x_3bit
+vMUX_4bit
+IS4E2IggnZoG=R1IZ>oE=E1
+V;I16oiOn8JY`Z_NRhUkAn0
+R6
+R1
+R2
+R3
+L0 37
+R4
+r1
+!s85 0
+31
+R5
+n@m@u@x_4bit
+vMUX_6bit
+I;Y:Q>B2I^9:SYIdaMTZ=N2
+V_3NdRbc?_5[9NWQa?F^hY3
+R6
+R1
+R2
+R3
+L0 49
+R4
+r1
+!s85 0
+31
+R5
+n@m@u@x_6bit
+vRippleCarryAdder
+ITTFAIFz@XgBN65J]M3^M]3
+V>;jSWA]UF`RfT3F^YhG_W1
+R6
+w1619274759
+R2
+R3
+L0 13
+R4
+r1
+31
+R5
+n@ripple@carry@adder
+!s85 0
+vRippleCarryAdder_3bit
+I0I1=mk<lz]z88l8ESF;a12
+VmPDCG;WREBAALU>c[OECz2
+R6
+R1
+R2
+R3
+L0 61
+R4
+r1
+!s85 0
+31
+R5
+n@ripple@carry@adder_3bit
+vRippleCarryAdder_4bit
+I3^^o=9l2U0MGFe`7[l_Vn0
+VlBL1F58SBNjjo<ZIAM;Pa3
+R6
+R1
+R2
+R3
+L0 85
+R4
+r1
+!s85 0
+31
+R5
+n@ripple@carry@adder_4bit
+vRippleCarryAdder_6bit
+IJ;e:;l;84D0[lJgTcbRMH2
+V4PF[IN[E5ZbV=:^h:;1^Y3
+R6
+R1
+R2
+R3
+L0 109
+R4
+r1
+!s85 0
+31
+R5
+n@ripple@carry@adder_6bit

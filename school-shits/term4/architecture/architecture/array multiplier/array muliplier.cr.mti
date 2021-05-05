@@ -1,0 +1,11 @@
+{D:/Projects/My-Toxic-Repo/school-shits/term4/architecture/architecture/array multiplier/array_multiplier.v} {1 {vlog -work work -nocovercells {D:/Projects/My-Toxic-Repo/school-shits/term4/architecture/architecture/array multiplier/array_multiplier.v}
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module FullAdder
+-- Compiling module HalfAdder
+-- Compiling module ArrayMultiplier_6x6
+-- Compiling module ArrayMultiplier_6x6_TB
+
+Top level modules:
+	ArrayMultiplier_6x6_TB
+
+} {} {}}
