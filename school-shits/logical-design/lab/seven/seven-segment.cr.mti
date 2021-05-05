@@ -1,9 +1,0 @@
-D:/Projects/My-Toxic-Repo/school-shits/logical-design/lab/seven/seven-segment.v {1 {vlog -work work -nocovercells D:/Projects/My-Toxic-Repo/school-shits/logical-design/lab/seven/seven-segment.v
-Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
--- Compiling module bcd_to_seven_segment
--- Compiling module bcd_test
-
-Top level modules:
-	bcd_test
-
-} {} {}}
