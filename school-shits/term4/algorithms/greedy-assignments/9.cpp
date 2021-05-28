@@ -1,0 +1,6 @@
+/*
+Nope
+Age farz konim Mst cycle dashte bashe onvaght mishe yeki az yal hasho pak krd
+pas vazne mst kahesh peyda mikone va in ba kamine boodanesh paradox dare.
+Borhane kholf shod
+*/
